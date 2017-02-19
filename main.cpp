@@ -1,5 +1,6 @@
 #include "Sudoku_cell.h"
 #include "Cell_collection.h"
+#include "Sudoku_grid.h"
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -18,8 +19,9 @@ int main(){
 	cout << endl;
   }
   Sudoku_grid K;
-  K.set_value(1,1,8);
-  K.set_value(3,3,9);
+  K.value_by_input_string("597");
+  K.value_by_input_string("113");
+  K.value_by_input_string("125");
   K.print_grid();
   return 0;
 }

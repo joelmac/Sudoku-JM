@@ -1,11 +1,14 @@
+#ifndef SUDOKU_CELL_H
+#define SUDOKU_CELL_H
 /*
 SudokuCell.h file.  Defines struct for sudoku class
 */
 
 class Sudoku_cell {
 private:
-	int value=0;
-	bool solveable=0;
+	int value;
+	bool solveable;
+	bool hasValue;
 
 public:
 	void check_to_solve();
@@ -14,3 +17,4 @@ public:
 	int get_value();
 	bool candidates[9];
 };
+#endif

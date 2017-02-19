@@ -11,6 +11,10 @@ Cell_collection::Cell_collection(vector<Sudoku_cell> &Sudoku_cells)
 <<<<<<< HEAD
 Cell_collection::~Cell_collection(){
 =======
+Cell_collection::Cell_collection(vector<> Sudoku_cells&){
+	cells=Sudoku_cells;
+	return;
+>>>>>>> 11226884b3e6343c338bd0aba823651757c1bc05
 }
 
 void solve_single(){

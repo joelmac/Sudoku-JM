@@ -7,14 +7,17 @@ Sudoku_cell::Sudoku_cell(){
 	value=0;
 	solveable=true;
 	hasValue=false;
-	candidates=[true,true,true,true,true,true,true,true,true];
+        for(int i=0;i<9;i++){
+		candidates[i] = true;
+	}
+
 }
 
 void Sudoku_cell::check_to_solve(){
-	int num_candididates=0;
+	int num_candidates=0;
 	int candidate_value=0;
 	for(int i=0; i<9;i++){
-		num_candidates += candidates[i];
+		num_candidates += (int) candidates[i];
 		if(candidates[i]){
 			candidate_value=i;
 		}
@@ -48,7 +51,7 @@ void Sudoku_cell::remove_candidate(int n){
 		return;
 	}
 	candidates[n-1] = false;
-	return
+	return;
 }
 
 int Sudoku_cell::get_value(){

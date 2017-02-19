@@ -1,4 +1,5 @@
 #include "Sudoku_cell.h"
+#include "Cell_collection.h"
 #include <iostream>
 #include <vector>
 using namespace std;

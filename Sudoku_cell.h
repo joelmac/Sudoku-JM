@@ -11,6 +11,7 @@ private:
 	bool hasValue;
 
 public:
+	Sudoku_cell();
 	void check_to_solve();
 	void remove_candidate(int);
 	void set_value(int);

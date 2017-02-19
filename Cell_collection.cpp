@@ -16,3 +16,7 @@ Cell_collection::~Cell_collection(){
 void solve_single(){
 	return;
 }
+
+int size(){
+	return cells.size();
+}

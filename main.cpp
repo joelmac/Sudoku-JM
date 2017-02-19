@@ -15,5 +15,8 @@ int main(){
   v.push_back(T);
   v.push_back(R);
   Cell_collection S(v);
+  for(int i=0; i<S.size();i++){
+    cout << S[i].get_value();
+  }
   return 0;
 }

@@ -12,6 +12,6 @@ public:
 	~Cell_collection();
 	void solve_single();
 	vector<Sudoku_cell> &cells;
-	int size();
+	int len();
 };
 #endif

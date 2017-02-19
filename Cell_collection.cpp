@@ -8,15 +8,14 @@ Cell_collection::Cell_collection(vector<Sudoku_cell> &Sudoku_cells)
 {
 }
 
-<<<<<<< HEAD
 Cell_collection::~Cell_collection(){
-=======
 }
 
-void solve_single(){
+void Cell_collection::solve_single(){
 	return;
 }
 
-int size(){
+int Cell_collection::len(){
 	return cells.size();
+
 }

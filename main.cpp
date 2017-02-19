@@ -17,5 +17,9 @@ int main(){
 	cout << S.cells[i].get_value();
 	cout << endl;
   }
+  Sudoku_grid K;
+  K.set_value(1,1,8);
+  K.set_value(3,3,9);
+  K.print_grid();
   return 0;
 }

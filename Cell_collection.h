@@ -4,12 +4,12 @@
 SudokuCell.h file.  Defines struct for sudoku class
 */
 #include <vector>
-
+using std::vector;
 class Cell_collection {
 public:
-	Cell_collection(std::vector<>);
+	Cell_collection(std::vector<>&);
 	~Cell_collection();
 	void solve_single();
-	std::vector<Sudoku_cell> cells[];
+	vector<Sudoku_cell> cells[];
 };
 #endif

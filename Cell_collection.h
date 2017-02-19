@@ -7,7 +7,8 @@ SudokuCell.h file.  Defines struct for sudoku class
 
 class Cell_collection {
 public:
-	Cell_collection(std::vector<Sudoku_cell>);
+	Cell_collection(std::vector<>);
+	~Cell_collection();
 	void solve_single();
 	std::vector<Sudoku_cell> cells[];
 };

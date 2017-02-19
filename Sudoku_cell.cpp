@@ -3,9 +3,16 @@ SudokuCell.cpp file.  Defines sudoku cell class
 */
 #include "Sudoku_cell.h"
 
+Sudoku_cell::Sudoku_cell(){
+	value=0;
+	solveable=true;
+	hasValue=false;
+	candidates=[true,true,true,true,true,true,true,true,true];
+}
+
 void Sudoku_cell::check_to_solve(){
-	num_candididates=0;
-	candidate_value=0;
+	int num_candididates=0;
+	int candidate_value=0;
 	for(int i=0; i<9;i++){
 		num_candidates += candidates[i];
 		if(candidates[i]){
@@ -34,4 +41,16 @@ void Sudoku_cell::set_value(int n){
 	value=n;
 	solveable=true;
 	return;
+}
+
+void Sudoku_cell::remove_candidate(int n){
+	if(n>9){
+		return;
+	}
+	candidates[n-1] = false;
+	return
+}
+
+int Sudoku_cell::get_value(){
+	return value;
 }
